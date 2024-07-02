@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Music Player Container -->
+<div class="music-player">
+    <!-- Player Controls -->
+    <div class="controls">
+      <!-- Play Button -->
+      <button id="play-btn">Play</button>
+      <!-- Pause Button -->
+      <button id="pause-btn">Pause</button>
+      <!-- Next Button -->
+      <button id="next-btn">Next</button>
+      <!-- Previous Button -->
+      <button id="prev-btn">Previous</button>
+      <!-- Shuffle Button -->
+      <button id="shuffle-btn">Shuffle</button>
+      <!-- Repeat Button -->
+      <button id="repeat-btn">Repeat</button>
+      <!-- Volume Control -->
+      <input type="range" id="volume-control" min="0" max="1" step="0.1">
+    </div>
+ <!-- Track Display -->
+ <div class="track-display">
+    <!-- Album Art -->
+    <img src="" id="album-art">
+    <!-- Track Information -->
+    <div class="track-info">
+      <!-- Track Title -->
+      <h2 id="track-title"></h2>
+      <!-- Track Artist -->
+      <p id="track-artist"></p>
+    </div>
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <!-- Progress Handle -->
+      <span id="progress-handle"></span>
+    </div>
+    <!-- Duration -->
+    <p id="duration"></p>
+  </div>
+  
+<!-- Playlist Container -->
+<ul id="playlist">
+    <!-- Playlist Items will be generated here -->
+  </ul>
+</div>
+
+
+<!-- Audio Element -->
+<audio id="audio-element" src=""></audio>
+</body>
+</html>
+    

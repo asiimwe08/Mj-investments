@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ Investments - NSSF Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+    <div class="container">
+        <h1>MJ Investments - NSSF Calculator</h1>
+        <form id="nssfForm">
+            <label for="age">Current Age:</label>
+            <input type="number" id="age" name="age" required><br>
+            
+            <label for="yearsOfWork">Years of Work:</label>
+            <input type="number" id="yearsOfWork" name="yearsOfWork" required><br>
+            
+            <label for="salary">Basic Salary:</label>
+            <input type="number" id="salary" name="salary" required><br>
+            
+            <button type="button" onclick="calculateNSSF()">Calculate</button>
+        </form>
+        <div id="result">
+            <!-- Result will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
